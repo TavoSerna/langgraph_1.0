@@ -1,0 +1,28 @@
+[project]
+name = "langgraph-1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "GustavoSerna", email = "gustavoluisserna@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "black>=26.10.1",
+    "ddgs>=9.16.1",
+    "isort>=9.0.2",
+    "langchain>=1.4.7",
+    "langchain-community>=0.4.2",
+    "langchain-ollama>=1.1.0",
+    "langchain-openai>=1.7.3",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.18",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langgraph-1 = "langgraph_1:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
